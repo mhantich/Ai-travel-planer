@@ -17,9 +17,9 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-white pt-16 pb-8 px-4 md:px-8">
+    <footer className="bg-white  pt-16 pb-8 px-4 md:px-2">
       {/* Newsletter Section */}
-      <div className="px-8 mx-auto mb-16">
+      <div className="px-2 mx-auto mb-16 container">
         <h2 className="text-3xl font-bold text-blue-900 mb-4">Sign up to our newsletter</h2>
         <p className="text-gray-600 mb-4">
           A newsletter about traveling and using AI to make finding, planning and booking your vacations really easy. Don't search, just ask Layla.
@@ -29,9 +29,9 @@ const Footer = () => {
           <input
             type="email"
             placeholder="Type your email..."
-            className="flex-1 px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:border-teal-500"
+            className="flex-1 px-1 py-2 border border-gray-200 rounded-lg focus:outline-none focus:border-teal-500"
           />
-          <button className="px-6 py-2 bg-sky-500 text-white rounded-lg hover:bg-teal-600 transition-colors">
+          <button className="px-2 py-2 bg-sky-500 text-white rounded-lg hover:bg-teal-600 transition-colors">
             Subscribe
           </button>
         </div>
@@ -65,7 +65,9 @@ const Footer = () => {
 
         {/* Bottom Section */}
         <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-500 mb-4 md:mb-0">© 2025 All right reserved by Layla</p>
+          <p className="text-gray-500 mb-4 md:mb-0">© 2025 All right reserved by 
+             <a className='text-sky-500' href="https://mhantich.vercel.app/">Mhantich</a>
+          </p>
           
           {/* Social Media Icons */}
           <div className="flex gap-4">
@@ -73,7 +75,7 @@ const Footer = () => {
               <a
                 key={index}
                 href="#"
-                className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-teal-500 hover:text-white transition-all"
+                className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-sky-500 hover:text-white transition-all"
               >
                 <Icon size={18} />
               </a>

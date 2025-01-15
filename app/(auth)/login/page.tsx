@@ -11,7 +11,7 @@ import { toast } from 'sonner';
 
 
 
-export default function Register() {
+export default function Login() {
   const router = useRouter();
   const login = useAuthStore((state) => state.login);
   const [isLoading, setIsLoading] = useState(false);
@@ -64,29 +64,9 @@ export default function Register() {
     }} className="min-h-screen flex items-center relative justify-center bg-gray-50">
       <div className='absolute top-0 bottom-0 left-0 right-0 w-full h-full bg-black/50'></div>
       <Card className="w-full relative max-w-md p-8">
-        <h1 className="text-2xl font-bold text-center mb-6">Create Account</h1>
+        <h1 className="text-2xl font-bold text-center mb-6">Login to Account</h1>
         <form onSubmit={onSubmit} className="space-y-4">
-          <div className="space-y-2">
-            <Label htmlFor="firstName">First Name</Label>
-            <Input
-              id="firstName"
-              name="firstName"
-              required
-              placeholder="John"
-            />
-   
-          </div>
-       
-          <div className="space-y-2">
-            <Label htmlFor="lastName">Last Name</Label>
-            <Input
-              id="lastName"
-              name="lastName"
-              required
-              placeholder="Doe"
-            />
-          </div>
-
+    
           <div className="space-y-2">
             <Label htmlFor="email">Email</Label>
             <Input
@@ -96,17 +76,6 @@ export default function Register() {
               required
               placeholder="john@example.com"
             />
-          </div>
-   <div className="space-y-2">
-            <Label htmlFor="firstName">Phone Number</Label>
-            <Input
-              id="phone"
-              name="phone"
-              required
-              placeholder="phone"
-              type='number'
-            />
-   
           </div>
           <div className="space-y-2">
             <Label htmlFor="password">Password</Label>
@@ -118,21 +87,13 @@ export default function Register() {
               placeholder="••••••••"
             />
           </div>
-          <div className="space-y-2">
-            <Label htmlFor="photo">Photo URL</Label>
-            <Input
-              id="photo"
-              name="photo"
-              type="url"
-              placeholder="https://example.com/photo.jpg"
-            />
-          </div>
+      
           <Button
             type="submit"
             className="w-full"
             disabled={isLoading}
           >
-            {isLoading ? 'Creating account...' : 'Register'}
+            {isLoading ? 'login to account...' : 'Login'}
           </Button>
         </form>
       </Card>
