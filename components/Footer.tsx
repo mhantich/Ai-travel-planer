@@ -17,14 +17,14 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-white  pt-16 pb-8 px-4 md:px-2">
+    <footer className="b pt-16 pb-8 px-4 md:px-2">
       {/* Newsletter Section */}
       <div className="px-2 mx-auto mb-16 container">
-        <h2 className="text-3xl font-bold text-blue-900 mb-4">Sign up to our newsletter</h2>
-        <p className="text-gray-600 mb-4">
-          A newsletter about traveling and using AI to make finding, planning and booking your vacations really easy. Don't search, just ask Layla.
+        <h2 className="text-3xl font-bold text-blue-200 mb-4">Sign up to our newsletter</h2>
+        <p className="text-gray-200 mb-4">
+          A newsletter about traveling and using AI to make finding, planning and booking your vacations really easy
         </p>
-        <p className="text-gray-500 mb-6">Over 73,000 subscribers</p>
+        <p className="text-gray-200 mb-6">Over 73,000 subscribers</p>
         <div className="flex gap-2 max-w-xl">
           <input
             type="email"
@@ -43,17 +43,17 @@ const Footer = () => {
           {/* Logo Section */}
           <div className="lg:col-span-2">
             <div className="text-sky-500 text-3xl font-bold mb-2">Mhx-Ai</div>
-            <p className="text-gray-500">Your own travel genius.</p>
+            <p className="text-gray-200">Your own travel genius.</p>
           </div>
 
           {/* Navigation Links */}
           {Object.entries(footerLinks).map(([category, links]) => (
             <div key={category}>
-              <h3 className="font-semibold text-gray-900 mb-4">{category}</h3>
+              <h3 className="font-semibold text-gray-300 mb-4">{category}</h3>
               <ul className="space-y-3">
                 {links.map((link) => (
                   <li key={link}>
-                    <a href="#" className="text-gray-500 hover:text-teal-500 transition-colors">
+                    <a href="#" className="text-gray-200 hover:text-sky-500 transition-colors">
                       {link}
                     </a>
                   </li>

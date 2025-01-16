@@ -23,7 +23,7 @@ const Testimonials = () => {
     <div className="bg-black w-full py-16 px-4 md:px-8">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <h2 className="text-white text-4xl md:text-5xl font-bold text-center mb-12">
+        <h2 className="text-blue-200 text-4xl md:text-5xl font-bold text-center mb-12">
           Cute things people have
           <br />
           said about MhxAi
@@ -41,7 +41,7 @@ const Testimonials = () => {
                   ${isWide ? 'md:col-span-2 lg:col-span-1' : ''}`}
               >
                 <p className="text-gray-800 text-lg leading-relaxed">
-                  "{testimonial.text}"
+                  {testimonial.text}
                 </p>
               </div>
             );

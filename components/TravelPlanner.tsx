@@ -5,10 +5,10 @@ function TravelPlanner() {
   return (
     <div>
               <div className="text-center mb-12">
-        <h1 className="text-5xl font-bold text-blue-900 mb-8 animate-fade-in">
+        <h1 className="text-5xl font-bold text-blue-200 mb-8 animate-fade-in">
           Simplify your travel using our trip planner AI
         </h1>
-        <p className="max-w-4xl mx-auto text-gray-600 mb-12 leading-relaxed">
+        <p className="max-w-4xl mx-auto text-gray-100 mb-12 leading-relaxed">
         MhxAi simplifies vacation planning by finding the best destinations, perfect stays, and exciting activities tailored to your preferences.
 Forget the hassle of managing multiple tabs and apps—everything you need is in one place.
 Input your details like budget, destination, and activities, and let MhxAi craft a personalized itinerary.

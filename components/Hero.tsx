@@ -81,7 +81,7 @@ function Hero() {
       <div className="bg-black/40 absolute top-0  right-0 bottom-0 left-0 w-full h-full "></div>
       <main className=" relative flex flex-col  justify-end text-white   h-[450px] container mx-auto  ">
         <div className="grid md:grid-cols-1 gap-12 w-full  items-center">
-          <div>
+          <div className="flex flex-col justify-center items-center">
             <h1 ref={titleRef} className="text-6xl font-bold mb-6">
               Travel trip with AI
             </h1>
@@ -91,13 +91,9 @@ function Hero() {
             </p>
             {/* Email Signup */}
             <div ref={emailRef} className="flex gap-4 mb-12">
-              <Input
-                type="email"
-                placeholder="Email address"
-                className=" border-gray-700 outline-none border-none"
-              />
+             
               <Button className="bg-white text-gray-900 hover:bg-gray-100">
-                Search
+                Get Started
               </Button>
             </div>
           </div>
